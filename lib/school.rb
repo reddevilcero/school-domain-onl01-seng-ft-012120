@@ -2,11 +2,11 @@
 
 class School
   
-  attr_accessor :name
-  attr_reader :roster
+  attr_accessor :name, :roster
+  
   def initialize(name)
     self.name= name
-    @roster= {}
+    self.roster= {}
   end
 
   def add_student(student, grade)
